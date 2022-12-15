@@ -1,0 +1,47 @@
+.contacts{
+    &__section-container{
+        margin-bottom: 131px;
+    }
+
+    &__heading-line-container{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        gap: 1rem;
+        margin-bottom: 45px;
+        
+    }
+
+    &__heading{
+
+        &-line{
+            max-width: 127px;
+            width: 100%;
+        }
+    }
+
+    &__text-contacts-container{
+        display: flex;
+        justify-content: space-between;
+        min-height: 141px;
+    }
+
+    &__text{
+        &-container{
+            max-width: 505px;
+            width: 100%;
+        }
+    }
+
+    &__contacts-container{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-self: flex-end;
+        padding: 1rem;
+        
+        @include add-border
+    }
+
+
+}

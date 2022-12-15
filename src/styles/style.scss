@@ -1,8 +1,21 @@
+@import "./core/index.scss";
+@import "../../pages/core/index.scss";
+
 body {
     background-color: $dark-gray;
     color: $white;
-    font-size: $font-normal;
+    font-size: clamp($font-small,3vw,$font-normal) ;
     font-family: 'Fira Code';
+    font-weight: 500;
+}
+
+p, span {
+    font-weight: 400;
+    color: $grey;
+}
+
+h2 {
+    font-size: $font-giant;
 }
 
 .flow-container {
@@ -36,5 +49,15 @@ body {
     &:hover{
         background-color: rgba($primary, 0.3);
     }
+}
+
+.line{
+    height: 1px;
+    background-color: $primary;
+}
+
+.small-logo-image{
+    width: 1.2rem;
+    height: auto;
 }
 
