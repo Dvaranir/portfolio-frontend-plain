@@ -1,37 +1,16 @@
-.projects{
-    &__section-container{
-        display: flex;
-        flex-direction: column;
-        gap: 48px;
-        margin-bottom: 106px;
-    }
-
-    &__heading-container{
-        display: flex;
-        justify-content: space-between;
-        
-
-    }
-
-    &__heading-line{
-
-
-        &-container{
-            display: flex;
-        }
-    }
-
+.completed-apps{
     &__heading{
-        font-size: $font-giant;
+        margin-bottom: 50px;
     }
 
-    &__projects-container{
-        display: flex;
+    &__container{
+        display: grid;
         justify-content: space-between;
+        grid-template-columns: 1fr 1fr 1fr;
         gap: 1rem;
     }
 
-    &__project{
+    &__app{
         &-container{
             @include add-border;
         }
@@ -64,6 +43,4 @@
             }
         }
     }
-
-
 }
