@@ -23,7 +23,6 @@
     &__text-contacts-container{
         display: flex;
         justify-content: space-between;
-        min-height: 141px;
     }
 
     &__text{
@@ -33,15 +32,37 @@
         }
     }
 
-    &__contacts-container{
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        align-self: flex-end;
-        padding: 1rem;
-        
-        @include add-border
+    &__contacts{
+        &-container{
+            display: flex;
+            flex-direction: column;
+            align-self: flex-end;
+            padding: 1rem;
+            
+            @include add-border
+        }
+
+        &-heading{
+            margin-bottom: 1rem;
+        }
+
+        &-link{
+            
+            &:hover .contacts__contacts-contact-text{
+                color: $white;
+            }
+        }
+
+        &-link-image{
+            width: 30px;
+        }
+
+        &-contact-text{
+            transition: color .2s ease;
+        }
     }
+    
+    
 
 
 }
